@@ -11,34 +11,77 @@
 
 <body>
 
-  <div id="imagemDog">
-    <img src="https://images.vexels.com/media/users/3/239031/isolated/preview/e88026be3961deeaae5177f394ea6940-cachorro-da-montanha-suico-2.png" alt="cachorro" height="200" width="200">
-  </div>
+  <header>
+    <div id="imagemDog">
+      <img src="https://i.pinimg.com/originals/1f/e4/d2/1fe4d2d3bbabc4777b69092957dfeb42.gif" alt="cachorro"
+        height="200" width="200">
+    </div>
+  </header>
 
-  <div id="formulario">
-    <form>
-      <label for="Nome">Me dê um nome:</label>
-      <input type="text" name="Nome" id="inputnome">
-      <label for="Data de Nascimento">Minha data de nascimento:</label>
-      <input type="date" name="Data de Nascimento" id="inputNascData">
-      <input type="submit" value="Enviar" id="submit">
-    </form>
-  </div>
+  <main>
+    <section aria-label="Informações sobre o Cachorro" id="section-forms">
+      <div id="formulario">
+        <form>
+          <label for="Nome">Me dê um nome:</label>
+          <input type="text" name="Nome" id="inputnome" required>
 
-  <div id="perfil">
-  </div>
+          <div id="area-sexo" class="area-radio">
+            <label for="Sexo">Sexo:</label><br>
+            <input id="sexo" type="radio" name="Sexo" value="macho" style="margin: 0" checked> Macho
+            <input id="sexo" type="radio" name="Sexo" value="fêmea" style="margin: 0"> Fêmea
+          </div>
 
-  <div id="metodos">
-    <button id="parar">Parar</button>
-    <button id="latir">Latir</button>
-    <button id="pular">Pular</button>
-    <button id="abanar">Abanar o Rabo</button>
-    <button id="comer">Comer</button>
-    <button id="exibirObjeto">Objeto Cachorro</button>
-  </div>
+          <div id="area-porte">
+            <label for="Porte">Porte</label> <br>
+              <input id="porte" type="radio" name="Porte" value="grande" style="margin: 0" checked> Grande
+              <input id="porte" type="radio" name="Porte" value="médio" style="margin: 0"> Médio
+              <input id="porte" type="radio" name="Porte" value="pequeno" style="margin: 0"> Pequeno
+              <input id="porte" type="radio" name="Porte" value="pequenês" style="margin: 0"> Pequenês
+          </div>
+
+          <label for="Cor">Qual a minha cor?</label>
+          <select for="Cor" id="cor" required>
+            <option value="caramelo">Caramelo</option>
+            <option value="preta">Preto</option>
+            <option value="branca">Branco</option>
+            <option value="marrom">Marrom</option>
+            <option value="mista">Misto</option>
+            <option value="pintadinha">Pintadinho</option>
+          </select><br>
+
+          <label for="Peso">Peso:</label>
+          <input type="text" name="Peso" id="peso">
+
+
+          <label for="Data de Nascimento">Minha data de nascimento:</label>
+          <input type="date" name="Data de Nascimento" id="inputNascData">
+
+          <input type="submit" value="Enviar" id="submit">
+        </form>
+      </div>
+
+    </section>
+
+    <section aria-label="Métodos" id="section-metodos">
+
+      <div id="perfil">
+      </div>
+      <h3> Brinque com o cachorrinho</h3>
+      <div id="metodos">
+        <button id="parar">Passear</button>
+        <button id="latir">Latir</button>
+        <button id="pular">Pular</button>
+        <button id="correr">Correr</button>
+        <button id="abanar">Abanar o Rabo</button>
+        <button id="comer">Comer</button>
+        <button id="dormir">Dormir</button>
+      </div>
+    </section>
+  </main>
   <footer>
     <p> NULima 2022.Todos os diretos reservados. Projeto para fins educacionais - Resilia Educação.</p>
   </footer>
+
   <script src="./index.js"></script>
 </body>
 

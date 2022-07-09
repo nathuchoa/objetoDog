@@ -1,98 +1,108 @@
-var imagemDog = document.getElementById('imagemDog')
-var infoDog = document.getElementById('perfil')
+let imagemDog = document.getElementById('imagemDog')
+let infoDog = document.getElementById('perfil')
 
-var dog = {
+let dog = {
   nome: '',
-  nascimento: '',
+  sexo: '',
+  cor: '',
+  porte: '', 
+  peso: '', 
+  data: '',
 
   parar: function () {
-    imagemDog.innerHTML = `<img src="https://images.vexels.com/media/users/3/239031/isolated/preview/e88026be3961deeaae5177f394ea6940-cachorro-da-montanha-suico-2.png" alt="cachorro" height="200" width="200">`
+    imagemDog.innerHTML = `<img src="https://i.pinimg.com/originals/1f/e4/d2/1fe4d2d3bbabc4777b69092957dfeb42.gif" alt="cachorro" height="200" width="200">`
   },
 
   latir: function () {
-    imagemDog.innerHTML = `<img src="https://c.tenor.com/P3qBe2UYu9IAAAAC/cachorro-cao-amigo.gif" alt="cachorro pulando" height="200"></img>`
+    imagemDog.innerHTML = `<img src="https://i.pinimg.com/originals/4d/3e/33/4d3e33d2278c4e9386e7bb1c310047e1.gif" alt="cachorro latindo" height="200"></img>`
   },
 
   comer: function () {
-    imagemDog.innerHTML = `<img src="https://meucaovelhinho.com.br/wp-content/uploads/2016/04/cao_comendo4.gif" alt="cachorro pulando" height="200"></img>`
+    imagemDog.innerHTML = `<img src="https://i.pinimg.com/originals/fb/70/f4/fb70f46e3b39b589e07381735466f561.gif" alt="cachorro comendo" height="200"></img>`
   },
 
   pular: function(){
-    imagemDog.innerHTML = `<img src="https://www.imagensanimadas.com/data/media/202/cachorro-imagem-animada-0731.gif" alt="cachorro pulando" height="200" width="200"></img>`
+    imagemDog.innerHTML = `<img src="https://i.pinimg.com/originals/2c/a5/7c/2ca57cbbd8721c4f5fb893cba5a2217d.gif" alt="cachorro pulando" height="200" width="200"></img>`
+  },
+
+  correr: function () {
+    imagemDog.innerHTML = `<img src="https://i.pinimg.com/originals/1b/11/0a/1b110aba188775ecac41384a43ab2135.gif" alt="cachorro correndo" height="200"></img>`
   },
 
   abaneORabo: function(){
-    imagemDog.innerHTML = `<img src="https://i.pinimg.com/originals/b0/73/9a/b0739a321d83761c189b217c43efac85.gif" alt="cachorro pulando" height="200" width="200"></img>`
+    imagemDog.innerHTML = `<img src="https://i.pinimg.com/originals/22/3c/e3/223ce3a581b95ba733bfcbedd4b2130b.gif" alt="cachorro abanando o rabo" height="200" width="200"></img>`
   },
 
-  exibirDog: function(){
-    console.log(cachorro)
-    /* infoDog.innerHTML = `<h2> Essa fofurinha se chama ${nome} e nasceu em ${data} </h2>`; */
+  dormir: function(){
+    imagemDog.innerHTML = `<img src="https://i.pinimg.com/originals/8f/01/00/8f010018cf3fd71285fb4980b8a1c07a.gif" alt="cachorro dormindo" height="200" width="200"></img>`
   },
+
 };
 
-var envio = document.getElementById("submit");
+const envio = document.getElementById("submit");
 
 envio.addEventListener("click", function (e) {
   e.preventDefault();
-  var nome = document.getElementById('inputnome').value;
-  var data = document.getElementById('inputNascData').value; 
-  console.log(nome + ' nasceu em ' + data);
+  let nome = document.getElementById('inputnome').value;
+  let sexo = document.getElementById('sexo').value; 
+  let cor = document.getElementById('cor').value; 
+  let porte = document.getElementById('porte').value; 
+  let peso = document.getElementById('peso').value; 
+  let data = document.getElementById('inputNascData').value; 
+
   dog.nome = nome;
+  dog.sexo = sexo;
+  dog.cor = cor;
+  dog.porte = porte;
+  dog.peso = peso;
   dog.data = data;
- 
+
+  infoDog.innerHTML = `<h2> Pet cadastrado! Se chama ${nome}, é ${sexo}, tem a coloração ${cor}, é de porte ${porte}, pesa ${peso}Kg e nasceu em ${data}. </h2>`;
+
+  console.log('O ' + nome + ' é '+ sexo +' , tem a coloração '+ cor +' , é de porte '+ porte + ', pesa '+ peso +'kg e nasceu em '+ data +'.')
 
 });
 
 
-var parar = document.getElementById('parar');
+const parar = document.getElementById('parar');
 parar.addEventListener('click', function(e){
   e.preventDefault();
   dog.parar()
 });
 
-var latir = document.getElementById('latir');
+const latir = document.getElementById('latir');
 latir.addEventListener('click', function(e){
   e.preventDefault();
   dog.latir()
 });
 
-var pular = document.getElementById('pular');
+const pular = document.getElementById('pular');
 pular.addEventListener('click', function(e){
   e.preventDefault();
   dog.pular()
 });
 
-var abaneORabo = document.getElementById('abanar');
+const abaneORabo = document.getElementById('abanar');
 abaneORabo.addEventListener('click', function(e){
   e.preventDefault();
   dog.abaneORabo()
 });
 
-var comer = document.getElementById('comer');
+const comer = document.getElementById('comer');
 comer.addEventListener('click', function(e){
   e.preventDefault();
   dog.comer()
 });
 
-/* 
-ZICÃO
-  ATRIBUTOS
-  - raça
-  - cor
-  - porte
-  - pelagem
-  - sexo
-  - idade
-  - peso
-  - ehCastrado
+const dormir= document.getElementById('dormir');
+dormir.addEventListener('click', function(e){
+  e.preventDefault();
+  dog.dormir()
+});
 
-  METODOS
-  - latir
-  - andar
-  - comer
-  - fazerCoco
-  - fazerXixi
-  - rolar
-  - rasgarOLixo
-  - dormir */
+const correr= document.getElementById('correr');
+correr.addEventListener('click', function(e){
+  e.preventDefault();
+  dog.correr()
+});
+

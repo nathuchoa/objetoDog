@@ -5,8 +5,7 @@
   <a href="#andamento">Andamento</a>&nbsp;&nbsp;
   <a href="#linguagens">Softwares & Ferramentas utilizadas</a>&nbsp;&nbsp;
   <a href="#habilidades">Habilidades adquiridas</a>&nbsp;&nbsp;
-  <a href="#grupo">Autores</a> 
-     <a href="#contribuir">Como contribuir</a>&nbsp;&nbsp;
+  <a href="#contribuir">Como contribuir</a>&nbsp;&nbsp;
 </div>
 
 <h2 id="sobre">Sobre 🔎</h2>

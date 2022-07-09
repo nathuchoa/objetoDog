@@ -15,7 +15,7 @@
   - Possuir métodos: latir, comer, correr, etc;
   - Um botão que irá criar o objeto e exibir a frase no console: `${nome} nasceu em ${dataDeNascimento}`. 
 
-<img src="./img/capa_criando_dog.png" alt="Layout da página inicial">
+<img src="./img/capa_criando_dog.PNG" alt="Layout da página inicial">
 
 <br>
 

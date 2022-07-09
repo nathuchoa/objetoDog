@@ -11,8 +11,8 @@
 <h2 id="sobre">Sobre 🔎</h2>
   <p> A proposta do projeto era desenvolver uma página que cria um objeto que neste caso será um cachorro. Orientações:</p>
 
-  - Possuir campo para adicionar nome, data de nascimento, outras características;
-  - Possuir atributos: latir, comer, correr, etc;
+  - Possuir campo para adicionar atributos: nome, data de nascimento, outras características;
+  - Possuir métodos: latir, comer, correr, etc;
   - Um botão que irá criar o objeto e exibir a frase no console: `${nome} nasceu em ${dataDeNascimento}`. 
 
 <img src="./img/capa_criando_dog.png" alt="Layout da página inicial">
